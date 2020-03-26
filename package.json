@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --fix",
+    "prettier": "pretty-quick --staged",
     "devtools": "react-devtools"
   },
   "dependencies": {
@@ -38,7 +39,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn lint && yarn test"
+      "pre-commit": "yarn prettier && yarn lint && yarn test"
     }
   }
 }
