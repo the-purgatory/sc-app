@@ -25,14 +25,15 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const App = () => {
-  console.log('Hello0000')
+  console.log('Hello0000');
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+          style={styles.scrollView}
+        >
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
