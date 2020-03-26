@@ -24,7 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const App: () => React$Node = () => {
+const App = () => {
+  console.log('Hello0000')
   return (
     <>
       <StatusBar barStyle="dark-content" />
