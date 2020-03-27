@@ -2,10 +2,11 @@ categories:
   - title: '🚀 Features'
     label: 'feature'
   - title: '🐛 Bug Fixes'
-    labels:
-      - 'fix'
-      - 'bugfix'
-      - 'bug'
+    label: 'fix'
+  - title: '📚 Documentations'
+    label: 'documentation'
+  - title: '💩 Random'
+    label: 'misc'
 template: |
   ## What's Changed
   $CHANGES
