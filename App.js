@@ -63,7 +63,6 @@ const styles = StyleSheet.create({
   }
 });
 const App = () => {
-  console.log('Hello0000');
   return (
     <View>
       <StatusBar barStyle='dark-content' />
