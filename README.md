@@ -47,7 +47,7 @@ export default {
 - Install stable release of [react-native-debugger](https://github.com/jhen0409/react-native-debugger)
 - Go to the directory -
   - In one terminal run `react-native start`
-  - In another use `react-native run-android`
+  - In another use `react-native run-android` (need to be run everytime for emulator, only once for device)
 - For connecting device and development server follow this [doc](https://reactnative.dev/docs/running-on-device)
 - adb -s <DEVICE_ID> reverse tcp:8081 tcp:8081 works because Chrome debugger and react-native debugger both are listening on port 8081
 - For RND - close chrome debugger, run RND and refresh App
