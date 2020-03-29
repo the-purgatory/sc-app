@@ -12,7 +12,7 @@
     "devtools": "react-devtools"
   },
   "dependencies": {
-    "react": "16.9.0",
+    "react": "16.13.0",
     "react-native": "0.61.3",
     "styled-components": "^5.0.1"
   },
