@@ -8,23 +8,23 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { Provider } from 'react-redux';
+import Login from './src/components/Login';
+
+import store from './src/store';
 
 const Wrapper = styled.View`
   background: crimson;
-  padding: 4px;
-`;
-
-const Title = styled.Text`
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
+  padding: 10px;
 `;
 
 const App = () => {
   return (
-    <Wrapper>
-      <Title>Hello Anqush</Title>
-    </Wrapper>
+    <Provider store={store}>
+      <Wrapper>
+        <Login />
+      </Wrapper>
+    </Provider>
   );
 };
 
