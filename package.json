@@ -1,7 +1,11 @@
 {
   "name": "SemanticChat",
   "version": "0.0.1",
-  "private": true,
+  "description": "Chat Application with realtime semantic analytics feedback",
+  "repository": "git@github.com:the-purgatory/sc-app.git",
+  "bugs": {
+    "url": "https://github.com/the-purgatory/sc-app/issues"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -9,7 +13,7 @@
     "test": "jest",
     "lint": "eslint . --fix",
     "prettier": "pretty-quick --staged",
-    "devtools": "react-devtools"
+    "monitor": "snyk monitor"
   },
   "dependencies": {
     "react": "16.9.0",
@@ -36,7 +40,6 @@
     "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "2.0.2",
     "pretty-quick": "^2.0.1",
-    "react-devtools": "^3",
     "react-test-renderer": "16.9.0",
     "redux-devtools-extension": "^2.13.8"
   },
