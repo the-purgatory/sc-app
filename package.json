@@ -12,12 +12,21 @@
     "devtools": "react-devtools"
   },
   "dependencies": {
+    "@styled-system/css": "^5.1.5",
+    "@styled-system/prop-types": "^5.1.5",
+    "@styled-system/theme-get": "^5.1.2",
+    "metro-config": "^0.59.0",
+    "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.3",
+    "react-native-svg": "^12.1.0",
+    "react-native-svg-transformer": "^0.14.3",
     "react-redux": "^7.2.0",
+    "react-router-native": "^5.1.2",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

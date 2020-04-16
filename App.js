@@ -1,31 +1,25 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
-import styled from 'styled-components';
-import { Provider } from 'react-redux';
-import Login from './src/components/Login';
+import { NativeRouter as Router, Switch, Route } from 'react-router-native';
 
+import { Provider } from 'react-redux';
+
+import { ThemeProvider } from 'styled-components';
+import AuthScreen from './src/screens/Auth';
+import theme from './src/styles/theme';
 import store from './src/store';
 
-const Wrapper = styled.View`
-  background: crimson;
-  padding: 10px;
-`;
-
-const App = () => {
+export default function App() {
   return (
     <Provider store={store}>
-      <Wrapper>
-        <Login />
-      </Wrapper>
+      <ThemeProvider theme={theme}>
+        <Router>
+          <Switch>
+            <Route path='/'>
+              <AuthScreen />
+            </Route>
+          </Switch>
+        </Router>
+      </ThemeProvider>
     </Provider>
   );
-};
-
-export default App;
+}
